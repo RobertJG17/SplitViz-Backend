@@ -8,8 +8,8 @@ from splitgate import Splitgate
 app = Flask(__name__)
 
 
-@app.route("/post_test", methods=["POST"])
-def post_test():
+@app.route("/base-stats", methods=["POST"])
+def base_stats():
     info = request.json
 
     items = []
